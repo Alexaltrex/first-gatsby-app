@@ -1,5 +1,7 @@
 import * as React from "react"
 import type { HeadFC } from "gatsby"
+import {Link} from "gatsby";
+import MainLayout from "../components/layouts/MainLayout";
 
 const pageStyles = {
   color: "#232129",
@@ -138,14 +140,12 @@ const links = [
 
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>
-        My First Gatsby App
-      </h1>
-    </main>
-  )
+      <MainLayout title="Home Page">
+        <p>Home page content</p>
+      </MainLayout>
+   )
 }
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>Home Page</title>
+export const Head: HeadFC = () => <title>Gatsby App | Home Page</title>
