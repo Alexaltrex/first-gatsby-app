@@ -1,7 +1,7 @@
 import React from "react";
 import {FC} from "react";
 import {Link} from "gatsby";
-import style from "./mainLayout.module.scss"
+
 
 interface IMainLayout {
     title: string
@@ -14,9 +14,11 @@ const MainLayout:FC<IMainLayout> = ({
                                         children
 }) => {
     return (
-        <div className={style.mainLayout}
+        <div
+            //className={style.mainLayout}
         >
-            <header className={style.header}
+            <header
+                //className={style.header}
             >
                 <Link to="/">First Gatsby App</Link>
 
